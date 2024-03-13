@@ -1,0 +1,12 @@
+.sticky-element {
+    position: fixed;
+    top: 0px;
+    z-index: 100;
+}
+
+@media (max-width: 767px) {
+    #navbarid.collapse.show {
+      position: relative;
+      top: 50px;
+    }
+  }
