@@ -14,8 +14,8 @@
 </head>
 
 <body>
-<header >
-    <nav class="navbar navbar-expand-sm navbar-light bg-light" style="padding-bottom: 30px; padding-top: 20px;">
+<header>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light" style="padding-bottom: 30px; padding-top: 20px; z-index: 9999;">
         <div class="container-fluid position-fixed navbar-light bg-light" style="padding-top: 20px; margin-bottom: 5px;">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,6 +45,49 @@
 </header>
 <main>
     <h1 class="gabarito-title text-center" style="padding: 15px;">Missie & Visie</h1>
+    <!-- Accordion -->
+    <div id="accordion">
+        <div class="row">
+            <div class="card col-lg-4 col-md-6 col-sm-12 ">
+                <div class="card-header">
+                  <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+                    <p class="gabarito-title">Onze Missie</p>
+                  </a>
+                </div>
+                <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
+                  <div class="card-body">
+                    <p class="gabarito-font">Onze missie is gericht op het streven naar beter onderwijs, waarbij kwaliteit voorop staat in plaats van winstmaximalisatie. We geloven in een non-profit benadering, waarbij eventuele winsten opnieuw worden geïnvesteerd in ons bedrijf en ons product. Daarnaast hechten we veel waarde aan privacybescherming, betrouwbaarheid en transparantie.</p>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="card col-lg-4 col-md-6 col-sm-12">
+                <div class="card-header">
+                  <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+                      <p class="gabarito-title">Onze Visie</p>
+                  </a>
+                </div>
+                <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+                  <div class="card-body">
+                      <p class="gabarito-font">Onze visie richt zich op het verbeteren en standaardiseren van digitalisering in het onderwijs. We geloven dat moderne technologieën en digitale tools een enorm potentieel hebben om het onderwijs te verrijken en te verbeteren. Door digitale middelen op een gestandaardiseerde manier in te zetten, streven we ernaar om gelijke kansen te creëren voor alle leerlingen en leraren, ongeacht hun achtergrond of locatie.</p>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="card col-lg-4 col-md-12 col-sm-12">
+                <div class="card-header">
+                  <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+                      <p class="gabarito-title">Wat maakt ons anders?</p>
+                  </a>
+                </div>
+                <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                  <div class="card-body">
+                      <p class="gabarito-font">In tegenstelling tot veel andere bedrijven, die onderwijs voornamelijk als een middel zien om winst te maken, zetten wij de kwaliteit van het onderwijs centraal. We begrijpen dat een goed onderwijsstelsel een essentiële pijler is voor de ontwikkeling van individuen en de samenleving als geheel.</p>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </div>
     <!-- Carousel -->
 <div id="carousel-missievisie" class="carousel slide" data-bs-ride="carousel" style="width: auto; height: fit-content; padding: 10px;">
     <script>
