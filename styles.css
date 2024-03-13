@@ -31,3 +31,19 @@
     text-align: center;
     color: white;
 }
+
+.navbar-color {
+    background-color:goldenrod;
+}
+
+.navbar-color li:hover {
+    background-color: darkgoldenrod;
+}
+
+.logo-color{
+    background-color: chartreuse;
+}
+
+.logo2-color{
+    background-color: blueviolet;
+}
