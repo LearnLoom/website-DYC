@@ -21,3 +21,19 @@
     font-weight: 400;
     font-style: normal;
 }
+
+.navbar-color {
+    background-color:goldenrod;
+}
+
+.navbar-color li:hover {
+    background-color: darkgoldenrod;
+}
+
+.logo-color{
+    background-color: chartreuse;
+}
+
+.logo2-color{
+    background-color: blueviolet;
+}
