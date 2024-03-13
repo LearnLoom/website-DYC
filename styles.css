@@ -22,6 +22,16 @@
     font-style: normal;
 }
 
+#footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(79, 79, 79);
+    text-align: center;
+    color: white;
+}
+
 .navbar-color {
     background-color:goldenrod;
 }
