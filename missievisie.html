@@ -1,59 +1,357 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>Missie & Visie</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="missievisie.css" />
     <!-- Bootstrap CSS v5.2.1 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-</head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<body>
-<header>
-    <nav class="navbar navbar-expand-sm navbar-light bg-light">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="product.html">Product</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="missievisie.html">Missie & Visie</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="overons.html">Over ons</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-sm navbar-light bg-light"
+        style="padding-bottom: 30px; padding-top: 20px; z-index: 9999"
+        id="navbarid"
+      >
+        <div
+          class="container-fluid position-fixed navbar-light bg-light"
+          style="padding-top: 20px; margin-bottom: 5px"
+        >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            onclick="moveNavbar()"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav gabarito-head">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="product.html">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="missievisie.html"
+                  >Missie & Visie</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="overons.html">Over ons</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </nav>
-</header>
-<main></main>
-<footer>
+      </nav>
+
+      <script>
+        function moveNavbar() {
+          var navbar = document.getElementById("navbarid");
+          if (window.innerWidth <= 767) {
+            if (navbar.style.top === "100px") {
+              navbar.style.top = "0";
+            } else {
+              navbar.style.position = "relative";
+              navbar.style.top = "100px";
+            }
+          }
+        }
+      </script>
+    </header>
+    <main>
+      <!-- Offcanvas Sidebar -->
+      <div class="offcanvas offcanvas-start" id="demo" style="z-index: 10000">
+        <div class="offcanvas-header">
+          <h1 class="offcanvas-title gabarito-title">FAQ</h1>
+          <button
+            type="button"
+            class="btn-close text-reset"
+            data-bs-dismiss="offcanvas"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <p class="gabarito-font">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet
+            necessitatibus, eaque laudantium aut laborum reprehenderit repellat
+            veritatis non provident iste repudiandae quas sunt praesentium
+            molestiae tenetur officiis accusantium. Incidunt, culpa. Accusamus a
+            quae illo rerum error impedit ea ab, magnam ducimus accusantium
+            mollitia nesciunt minima pariatur eligendi obcaecati adipisci sed
+            nisi veritatis hic, ex tenetur? Molestias minus sapiente vero
+            officiis, deleniti nulla quasi incidunt magni amet voluptatibus quos
+            sequi assumenda quo nisi quod at praesentium animi voluptate rem
+            necessitatibus harum! Ipsam cum aliquid nihil dignissimos ipsa porro
+            nam tenetur aut, repellendus ut. Dolor, quia. Assumenda, quas
+            repudiandae. Officiis adipisci reprehenderit at dolor ex quia
+            assumenda, animi, quaerat earum laudantium veniam sed ullam rem
+            neque tempore autem nobis, dolore quisquam! Nobis hic provident
+            maiores repudiandae molestias porro delectus sapiente? Aut alias
+            dignissimos ea, doloremque provident, eius placeat ratione nihil
+            reprehenderit magni neque esse. Doloremque, odit nulla placeat vitae
+            sequi corporis itaque quo praesentium impedit, rem explicabo nihil,
+            recusandae aspernatur. Voluptates odit libero omnis suscipit
+            voluptatibus minus, enim ducimus temporibus similique id at
+            quibusdam esse facilis repellendus dolor debitis iusto cupiditate
+            maiores vitae vero nobis officia minima reiciendis! Alias suscipit
+            distinctio, molestiae modi aperiam eius, exercitationem vero
+            officiis incidunt eum culpa maiores.
+          </p>
+        </div>
+      </div>
+      <h1 class="gabarito-title text-center" style="padding: 15px">
+        Missie & Visie
+      </h1>
+      <!-- Accordion -->
+      <div id="accordion">
+        <div class="row">
+          <div class="card col-lg-4 col-md-6 col-sm-12">
+            <div class="card-header">
+              <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+                <p class="gabarito-title">Onze Missie</p>
+              </a>
+            </div>
+            <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
+              <div class="card-body">
+                <p class="gabarito-font">
+                  Onze missie is gericht op het streven naar beter onderwijs,
+                  waarbij kwaliteit voorop staat in plaats van
+                  winstmaximalisatie. We geloven in een non-profit benadering,
+                  waarbij eventuele winsten opnieuw worden geïnvesteerd in ons
+                  bedrijf en ons product. Daarnaast hechten we veel waarde aan
+                  privacybescherming, betrouwbaarheid en transparantie.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card col-lg-4 col-md-6 col-sm-12">
+            <div class="card-header">
+              <a
+                class="collapsed btn"
+                data-bs-toggle="collapse"
+                href="#collapseTwo"
+              >
+                <p class="gabarito-title">Onze Visie</p>
+              </a>
+            </div>
+            <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+              <div class="card-body">
+                <p class="gabarito-font">
+                  Onze visie richt zich op het verbeteren en standaardiseren van
+                  digitalisering in het onderwijs. We geloven dat moderne
+                  technologieën en digitale tools een enorm potentieel hebben om
+                  het onderwijs te verrijken en te verbeteren. Door digitale
+                  middelen op een gestandaardiseerde manier in te zetten,
+                  streven we ernaar om gelijke kansen te creëren voor alle
+                  leerlingen en leraren, ongeacht hun achtergrond of locatie.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card col-lg-4 col-md-12 col-sm-12">
+            <div class="card-header">
+              <a
+                class="collapsed btn"
+                data-bs-toggle="collapse"
+                href="#collapseThree"
+              >
+                <p class="gabarito-title">Wat maakt ons anders?</p>
+              </a>
+            </div>
+            <div
+              id="collapseThree"
+              class="collapse"
+              data-bs-parent="#accordion"
+            >
+              <div class="card-body">
+                <p class="gabarito-font">
+                  In tegenstelling tot veel andere bedrijven, die onderwijs
+                  voornamelijk als een middel zien om winst te maken, zetten wij
+                  de kwaliteit van het onderwijs centraal. We begrijpen dat een
+                  goed onderwijsstelsel een essentiële pijler is voor de
+                  ontwikkeling van individuen en de samenleving als geheel.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Carousel -->
+      <div
+        id="carousel-missievisie"
+        class="carousel slide"
+        data-bs-ride="carousel"
+        style="width: auto; height: fit-content; padding: 10px"
+      >
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            var carousel = document.getElementById("carousel-missievisie");
+
+            function adjustCarouselInterval() {
+              if (window.innerWidth < 768) {
+                carousel.removeAttribute("data-interval");
+                carousel.setAttribute("data-bs-ride", "carousel"); // Automatische rotatie op kleinere schermen inschakelen
+              } else {
+                carousel.removeAttribute("data-bs-ride"); // Automatische rotatie op grotere schermen uitschakelen
+                carousel.setAttribute("data-interval", "false");
+              }
+            }
+
+            window.addEventListener("resize", adjustCarouselInterval);
+            adjustCarouselInterval(); // Initial call bij het laden van de pagina
+          });
+        </script>
+
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carousel-missievisie"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carousel-missievisie"
+            data-bs-slide-to="1"
+          ></button>
+        </div>
+
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner" style="width: inherit; height: inherit">
+          <div class="carousel-item active">
+            <img
+              src="https://scholenopdekaart.nl/images/kopfoto-PO.jpg"
+              style="height: inherit; width: inherit"
+              alt="kinderen_op_school"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://www.wtnschp.be/wp-content/uploads/2015/06/technologie-960x640.jpg"
+              style="height: inherit; width: inherit"
+              alt="technologie"
+            />
+          </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          style="background-color: lightcyan; max-height: inherit"
+          data-bs-target="#carousel-missievisie"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          style="background-color: lightcyan; max-height: inherit"
+          data-bs-target="#carousel-missievisie"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </main>
     <!-- place footer here -->
-</footer>
-<!-- Bootstrap JavaScript Libraries -->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
+    <footer
+      style="
+        text-align: center;
+        color: white;
+        background-color: rgb(79, 79, 79);
+      "
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="company-details">
+              <span class="fa fa-map-marker"></span>
+              <div>
+                <p>Rengerspark 10, 8917 DD Leeuwarden</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="company-details">
+              <span class="fa fa-phone"></span>
+              <div>
+                <p>Telefoon: +31 6 12345678</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="company-details">
+              <span class="fa fa-envelope"></span>
+              <div>
+                <p>voorbeeld@nhlstenden.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-11 col-md-12">
+              <div class="text-center">
+                <p>© All rights reserved | LearnLoom.</p>
+              </div>
+            </div>
+            <div class="col-lg-1">
+              <div class="company-details">
+                <span class="fa fa-envelope"></span>
+                <!-- Button to open the offcanvas sidebar -->
+                <button
+                  class="btn btn-primary"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#demo"
+                >
+                  FAQ
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-        crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
