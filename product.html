@@ -4,16 +4,20 @@
 <head>
     <title>Product</title>
     <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
 
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
+
+    <!--  Stylesheets  -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="product.css">
 </head>
 
 <body>
-<header>
+<header class="fixed-top">
     <nav class="navbar navbar-expand-sm navbar-light bg-light">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -21,7 +25,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav gabarito-head">
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="index.html">Home</a>
                     </li>
@@ -43,8 +47,71 @@
     </nav>
 </header>
 <main></main>
-<footer>
-    <!-- place footer here -->
+<main>
+    <div class="container p-1">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h1 class="card-title gabarito-head">
+                            Ons Product
+                        </h1>
+                        <p class="card-text gabarito-font">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam commodi consequuntur culpa
+                            ea fugiat natus neque quae quisquam reprehenderit similique. Amet aperiam architecto at
+                            blanditiis corporis dolore dolorum ea earum eius eos eveniet excepturi expedita explicabo
+                            fuga hic in libero magnam magni necessitatibus non pariatur perferendis quam quia quibusdam
+                            quos reiciendis sed sequi tempora unde veniam, veritatis voluptate voluptates voluptatum.
+                            Accusantium cum debitis excepturi hic impedit ipsam itaque minima nam quas, quibusdam
+                            quisquam ratione repellendus sint tempore temporibus, vel voluptates.
+                        </p>
+                        <div class="card-img-bottom aspect_container">
+                            <img
+                                    class="rounded-3 aspect"
+                                    src="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg"
+                                    alt="Placeholder"
+                                    loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h1 class="card-title gabarito-head">
+                            Prototype
+                        </h1>
+                        <p class="card-text gabarito-font">
+                            Hieronder is een interactief prototype van ons product te vinden.
+                            Aan de linkerkant bevindt zich een knop met drie streepjes.
+                            Wanneer er op deze knop wordt gedrukt, verschijnt er een uitklapvenster.
+                            In dit venster staan extra onderdelen en de instellingen.
+                            In de rechthoek met het kruis wordt de voortgang van de leerling met het huiswerk
+                            weergegeven.
+                            In het vierkant daarnaast staan de exacte vakken.
+                            Wanneer er op één van deze vakken wordt geklikt, verschijnt er een menu waarin de voortgang
+                            en hoe goed de leerling dit vak beheerst te zien zijn.
+                            Rechts bovenin staat het profiel van de leerling.
+                        </p>
+                        <div class="card-img-bottom aspect_container">
+                            <iframe
+                                    class="rounded-3 aspect"
+                                    src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FybjsXO1hVMdBQnWk4iJW9A%2FBasisschool-digitale-app%3Ftype%3Ddesign%26node-id%3D901-105%26t%3DrfopUeY75QDxpA3z-0%26scaling%3Dscale-down-width%26page-id%3D1669%253A162202&hide-ui=1"
+                                    allowfullscreen
+                                    loading="lazy">
+                            </iframe>
+                        </div>
+                        <a
+                                href="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FybjsXO1hVMdBQnWk4iJW9A%2FBasisschool-digitale-app%3Ftype%3Ddesign%26node-id%3D901-105%26t%3DrfopUeY75QDxpA3z-0%26scaling%3Dcontain%26page-id%3D1669%253A162202"
+                                class="btn btn-primary gabarito-font mt-2">
+                            Ga naar prototype
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
 </footer>
 <!-- Bootstrap JavaScript Libraries -->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
