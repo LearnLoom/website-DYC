@@ -15,33 +15,47 @@
 
 <body>
 <header>
-    <nav class="navbar navbar-expand-sm navbar-light bg-light" style="padding-bottom: 30px; padding-top: 20px; z-index: 9999;">
+    <nav class="navbar navbar-expand-sm navbar-light bg-light" style="padding-bottom: 30px; padding-top: 20px; z-index: 9999;" id="navbarid">
         <div class="container-fluid position-fixed navbar-light bg-light" style="padding-top: 20px; margin-bottom: 5px;">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav gabarito-head">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="product.html">Product</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="missievisie.html">Missie & Visie</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="overons.html">Over ons</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onclick="moveNavbar()">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav gabarito-head">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="product.html">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="missievisie.html">Missie & Visie</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="overons.html">Over ons</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </nav>
+      </nav>
+      
+      <script>
+        function moveNavbar() {
+          var navbar = document.getElementById("navbarid");
+          if (window.innerWidth <= 767) {
+            if (navbar.style.top === "100px") {
+              navbar.style.top = "0";
+            } else {
+              navbar.style.position = "relative";
+              navbar.style.top = "100px";
+            }
+          }
+        }
+      </script>
 </header>
 <main>
     <h1 class="gabarito-title text-center" style="padding: 15px;">Missie & Visie</h1>
