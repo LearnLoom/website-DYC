@@ -1,5 +1,10 @@
 main {
     padding-top: 56px;
+    padding-bottom: 80px;
+}
+
+.card {
+    height: 100%;
 }
 
 /* 16:9 aspect ratio voor prototype iframe */
